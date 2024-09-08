@@ -1,18 +1,18 @@
-const webpack = require("webpack");
-const webpackMerge = require("webpack-merge");
-const baseConfig = require("./webpack.config");
+const webpack = require('webpack');
+const webpackMerge = require('webpack-merge');
+const baseConfig = require('./webpack.config');
 
 const config = {
-  mode: "production",
+  mode: 'production',
   cache: {
-    type: "filesystem",
+    type: 'filesystem',
     buildDependencies: {
       config: [__filename], //使用文件缓存
     },
   },
   optimization: {
     minimize: true,
-    moduleIds: "deterministic",
+    moduleIds: 'deterministic',
   },
 };
 
