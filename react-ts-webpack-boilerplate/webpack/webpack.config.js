@@ -64,6 +64,7 @@ module.exports = {
     new CssMinimizerWebpackPlugin(),
   ],
   devServer: {
+    historyApiFallback: true,
     port: 8000,
     open: true,
   },
