@@ -13,3 +13,12 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+
+html{
+    background: var(--yellow-theme-background-color);
+    height: 100%;
+}
+
+#root{
+    height: 100%;
+}
