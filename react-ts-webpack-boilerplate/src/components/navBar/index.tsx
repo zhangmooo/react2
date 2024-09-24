@@ -15,7 +15,7 @@ const data = [
     to: '/about',
   },
   {
-    label:'SKILLS',
+    label: 'SKILLS',
     to: '/skills',
   },
   {
@@ -46,24 +46,25 @@ export const Navbar = () => {
             <FaReact size={30} />
           </Link>
         </div>
-        <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""} `}>
+        <ul
+          className={`navbar__container__menu ${toggleIcon ? 'active' : ''} `}
+        >
           {/*如果toggleIcon为true，则添加active类名，否则添加空字符串*/}
-          {
-            data.map((item, key)=> (
-              <li key={key} className="navbar__container__menu__item">
-                <Link className="navbar__container__menu__item__links" to={item.to}>
+          {data.map((item, key) => (
+            <li key={key} className="navbar__container__menu__item">
+              <Link
+                className="navbar__container__menu__item__links"
+                to={item.to}
+              >
                 {item.label}
-                </Link>
-              </li>
-            ))
-          }
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <div className="nav-icon" onClick={handleToggleIcon}>
-        {
-          toggleIcon ? <HiX size={30}/> : <FaBars size={30}/>
-        }
-        </div> 
+          {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
+        </div>
       </nav>
     </div>
   );
