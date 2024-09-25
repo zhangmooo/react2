@@ -6,33 +6,32 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigateTocontactMePage = () => {
-    navigate("/contact");
+    navigate('/contact');
   };
 
   return (
-    <section id="home" className='home'>
+    <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>
-          Hello, I'm Zhang;
+          Hello, I am Zhang;
           <br />
           Front end developer
         </h1>
       </div>
       <Animate
-      play 
-      duration={1.5}
-      delay={1}
-      start={{
-        transform : "translateY(550px)",/*初始位置再-550px */
-      }}
-      end={{
-        transform: "translateY(0px)",/*最终值再0 */
-      }}
+        play
+        duration={1.5}
+        delay={1}
+        start={{
+          transform: 'translateY(550px)' /*初始位置再-550px */,
+        }}
+        end={{
+          transform: 'translateY(0px)' /*最终值再0 */,
+        }}
       >
-
-      <div className="home__contact-me">
-        <button onClick={handleNavigateTocontactMePage}>Hire Me</button>
-      </div>
+        <div className="home__contact-me">
+          <button onClick={handleNavigateTocontactMePage}>Hire Me</button>
+        </div>
       </Animate>
     </section>
   );
