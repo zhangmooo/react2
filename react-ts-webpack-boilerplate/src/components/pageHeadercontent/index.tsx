@@ -1,7 +1,7 @@
 import './styles.css';
 import React from 'react';
 
-const PageHeaderContent: React.FC<{ headerText: string; icon: string }> = (
+const PageHeaderContent: React.FC<{ headerText: React.ReactNode; icon: React.ReactNode }> = (
   props,
 ) => {
   const { headerText, icon } = props;
