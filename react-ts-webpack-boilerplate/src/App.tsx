@@ -10,6 +10,7 @@ import Navbar from './components/navBar';
 import About from './containers/about';
 
 function App() {
+  console.log('999');
   return (
     <div className="App__main-page-content">
       <Navbar />
