@@ -59,10 +59,10 @@ const About = () => {
         duration={1.5}
         delay={1}
         start={{
-          transform: 'translateX(1300px)',
+          transform: 'translateX(600px)',
         }}
         end={{
-          transform: 'translateX(0px)',
+          transform: 'translatex(0px)',
         }}
       >
         <h3>Personal Information</h3>
@@ -78,26 +78,36 @@ const About = () => {
         </ul>
         </Animate>
         </div>
-        <div className='about__content__servicesWrapper'>
-          <div className='about__content__servicesWrapper__innerContent'>
+        <div className="about__content__servicesWrapper">
+        <Animate
+        play
+        duration={1.5}
+        delay={1}
+        start={{
+          transform: 'translateX(550px)' /*初始位置再-550px */,
+        }}
+        end={{
+          transform: 'translatex(0px)' /*最终值再0 */,
+        }}
+      >
+          <div className="about__content__servicesWrapper__innerContent">
           <div>
-              <FaDev size={60} color="var(--yellow-theme-main-color)"/>
+              <FaDev size={50} color="var(--yellow-theme-main-color)"/>
             </div>
 
             <div>
-              <DiAndroid size={60} color="var(--yellow-theme-main-color)"/>
+              <DiAndroid size={50} color="var(--yellow-theme-main-color)"/>
             </div>
 
             <div>
-              <FaDatabase size={60} color="var(--yellow-theme-main-color)"/>
+              <FaDatabase size={50} color="var(--yellow-theme-main-color)"/>
             </div>
             <div>
-              <DiApple size={60} color="var(--yellow-theme-main-color)"/>
+              <DiApple size={50} color="var(--yellow-theme-main-color)"/>
             </div>
           </div>
+          </Animate>
         </div>
-    
-    
       </div>
     </section>
   )

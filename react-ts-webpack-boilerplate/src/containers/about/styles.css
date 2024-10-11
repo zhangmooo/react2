@@ -53,5 +53,91 @@
                 }
             }
         }
+                &__servicesWrapper{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    &__innerContent{
+                        margin: 7%;
+                        width: 350px;
+                        height: 350px;
+                        background: radial-gradient(180px,var(--yellow-theme-main-color),transparent 90%);
+                        position: relative;
+                        border-radius: 50%;
+                        border: 1.5px solid var(--yellow-theme-main-color);
+                        animation: rotation 10s linear 1s infinite;
+                        div:nth-child(1){
+                            position: absolute;
+                            top: -9%;
+                            left: 42%;
+                        }
+                        div:nth-child(2){
+                            position: absolute;
+                            top:39%;
+                            left: 93%;
+                        }
+                        div:nth-child(3){
+                            position: absolute;
+                            bottom:-9% ;
+                            left:42% ;
+                        }
+                        div:nth-child(4){
+                            position: absolute;
+                            top: 39%;
+                            left: -9%;
+                        }
+                    }
+                }
+           }
     }
-}
+    @keyframes rotation{
+        100%{
+            transform: rotate(360deg)
+        }
+    }
+
+    @media only screen and (max-width :768px){
+        .about__content{
+            flex-direction:column ;
+            &__personalWrapper
+            {
+                width: 100%;    
+            }
+            &__servicesWrapper{
+                height: auto;
+                width: 100%;
+                overflow: visible;
+               margin-top: 20px;
+               
+                &__innerContent{
+                    width: 200px;
+                    height: 200px;
+                    margin: auto;
+                    background: radial-gradient(100px,var(--yellow-theme-main-color),transparent 100%);
+                    overflow: visible;
+                    div:nth-child(1){
+                        position: absolute;
+                        top: -15%;
+                        left: 38%;
+                    }
+                    div:nth-child(2){
+                        position: absolute;
+                        right:-11% ;
+                        top: 40%;
+                    }
+                    div:nth-child(3){
+                        position: absolute;
+                        bottom:-12% ;
+                        left:40% ;
+                    }
+                    div:nth-child(4){
+                        position: absolute;
+                        top: 40%;
+                        left: -12%;
+                    }
+                }
+            }
+        }
+
+    }
