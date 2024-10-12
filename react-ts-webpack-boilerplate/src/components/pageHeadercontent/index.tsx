@@ -1,9 +1,10 @@
 import './styles.css';
 import React from 'react';
 
-const PageHeaderContent: React.FC<{ headerText: React.ReactNode; icon: React.ReactNode }> = (
-  props,
-) => {
+const PageHeaderContent: React.FC<{
+  headerText: React.ReactNode;
+  icon: React.ReactNode;
+}> = (props) => {
   const { headerText, icon } = props;
 
   return (
