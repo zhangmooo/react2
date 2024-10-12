@@ -28,11 +28,11 @@ const Skills = () => {
               }}
             >
               <h3 className="skill__content-wrapper__inner-content__category-text">
-                {item?.label}
+                {item.label}
               </h3>
               <div>
                 {/* @ts-ignore */}
-                {item.data.map((skill: Data, j: number) => (
+                {item.data.map(({skillName, percentage }, j: number) => (
                   <AnimateKeyframes
                     key={i}
                     play
@@ -41,11 +41,13 @@ const Skills = () => {
                     iterationCount="1"
                   >
                     <div className="progressbar-wrapper" key={j}>
-                      <p>{skill.skillName}</p>
+                      <p>{skillName}</p>
                       <Line
-                        percent={skill.percentage}
-                        strokeWidth="2"
+                        percent={percentage}
+                        strokeWidth={2}
                         strokeColor="var(--yellow-theme-main-color)"
+                        trailWidth={2}
+                        strokeLinecap='square'
                       />
                     </div>
                   </AnimateKeyframes>
