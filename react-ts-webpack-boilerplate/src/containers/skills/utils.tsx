@@ -1,6 +1,6 @@
 interface Skill {
   skillName: string;
-  percentage: number;
+  percentage: string;
 }
 
 interface SkillCategory {
