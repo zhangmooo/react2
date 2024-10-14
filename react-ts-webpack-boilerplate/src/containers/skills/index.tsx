@@ -5,6 +5,7 @@ import { Animate, AnimateKeyframes } from 'react-simple-animate';
 import { skillsData } from './utils';
 import './styles.css';
 import { Line } from 'rc-progress';
+
 const Skills = () => {
   return (
     <section id="skills" className="skills">
@@ -27,7 +28,7 @@ const Skills = () => {
                 transform: 'translateX(0px)',
               }}
             >
-              <h3 className="skill__content-wrapper__inner-content__category-text">
+              <h3 className="skills__content-wrapper__inner-content__category-text">
                 {item.label}
               </h3>
               <div>
@@ -43,7 +44,7 @@ const Skills = () => {
                     <div className="progressbar-wrapper" key={j}>
                       <p>{skillName}</p>
                       <Line
-                        percent={percentage}
+                        percent = {Number(percentage)}
                         strokeWidth={2}
                         strokeColor="var(--yellow-theme-main-color)"
                         trailWidth={2}
