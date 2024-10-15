@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.(css|less)$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           'css-loader',
