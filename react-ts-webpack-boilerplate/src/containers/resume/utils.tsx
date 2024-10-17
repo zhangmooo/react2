@@ -33,8 +33,13 @@ export const data: Category = {
         },
         {
             title: "Higher Secondary",
-            subTitle: "XXXXXXXXXXXXXXXXXXXXX",
+            subTitle: "XXXXXXXXXX",
             description: "XXXXXXXXXXXXXXX"
+        },
+        {
+            title: " XXXXXXX",
+            subTitle: "XXXXXXXX",
+            description: "XXXXXXXXXXXXXXXXXX"
         }
     ]
 }
