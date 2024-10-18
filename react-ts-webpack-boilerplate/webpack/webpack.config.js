@@ -43,8 +43,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        exclude: /node_modules/,
-        include: [path.resolve('./src/assets/images')],
+        // include: [path.resolve('./src/assets/images')],
         use: [
           {
             loader: 'url-loader',
